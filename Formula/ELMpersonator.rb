@@ -5,7 +5,7 @@
 class Elmpersonator < Formula
   desc "ELM327 Impersonator for macOS and Linux"
   homepage "https://github.com/Automotive-Swift/ELMpersonator"
-  url "https://github.com/Automotive-Swift/ELMpersonator.git", tag: "0.5.2", revision: "f0dc892b55408b6f124d69678cc5ab54bec2e4cb"
+  url "https://github.com/Automotive-Swift/ELMpersonator.git", tag: "0.5.4", revision: "0aac44c07557a13a1a6767a69cf218d4618de424"
 
   license "MIT"
 
