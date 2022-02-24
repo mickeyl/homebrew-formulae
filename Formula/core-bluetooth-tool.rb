@@ -5,7 +5,7 @@
 class CoreBluetoothTool < Formula
   desc "Bluetooth Low Energy Tool for macOS"
   homepage "https://github.com/mickeyl/core-bluetooth-tool"
-  url "https://github.com/mickeyl/core-bluetooth-tool.git", tag: "0.3.0", revision: "7e990d0e98dce9f708c263244e3fce0fb5c253f2"
+  url "https://github.com/mickeyl/core-bluetooth-tool.git", tag: "0.3.1", revision: "9692ab2dc740582470a022ffa258094c5bcfd96b"
 
   license "MIT"
 
