@@ -5,7 +5,9 @@
 class Ecumulator < Formula
   desc "Electronic Control Module Emulator for macOS and Linux"
   homepage "https://github.com/Automotive-Swift/ECUmulator"
-  url "https://github.com/Automotive-Swift/ECUmulator.git", tag: "0.5.0", revision: "c1ef0f151aa4474ea65c019d0d47e5b734be5774"
+  url "https://github.com/Automotive-Swift/ECUmulator.git"
+  head "https://github.com/Automotive-Swift/ECUmulator.git", :tag: "0.5.4"
+  version "0.5.4"
 
   license "MIT"
 
