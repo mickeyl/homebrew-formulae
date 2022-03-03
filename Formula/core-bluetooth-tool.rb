@@ -1,7 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
-# :nodoc:
 class CoreBluetoothTool < Formula
   desc "Bluetooth Low Energy Tool for macOS"
   homepage "https://github.com/mickeyl/core-bluetooth-tool"
