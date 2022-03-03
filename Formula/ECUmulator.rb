@@ -9,10 +9,6 @@ class Ecumulator < Formula
   head "https://github.com/Automotive-Swift/ECUmulator.git", :tag => "0.5.4"
   version "0.5.4"
 
-  license "MIT"
-
-  head "https://github.com/mickeyl/", shallow: false
-
   depends_on xcode: ["13", :build]
 
   def install

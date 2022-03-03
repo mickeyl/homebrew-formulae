@@ -9,10 +9,6 @@ class Elmpersonator < Formula
   head "https://github.com/Automotive-Swift/ELMpersonator.git", :tag => "0.5.9"
   version "0.5.9
 
-  license "MIT"
-
-  head "https://github.com/mickeyl/", shallow: false
-
   depends_on xcode: ["13", :build]
 
   def install
