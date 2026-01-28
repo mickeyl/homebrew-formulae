@@ -46,7 +46,7 @@ class EcumulatorPy < Formula
     url "https://github.com/Automotive-Swift/CANcorder.git",
         using: :git,
         tag: "v0.1.1",
-        revision: "efb0cdb0df7f5c10ff8b6a11315ea5ff6993a125"
+        revision: "6d2a4d847f3ca1cf97582e9d6f91d865ca461266"
   end
 
   def install
