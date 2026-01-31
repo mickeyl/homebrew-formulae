@@ -5,9 +5,9 @@ class EcumulatorPy < Formula
   homepage "https://gitlab.com/a11086/ECumulator.py"
   url "ssh://git@gitlab.com/a11086/ECumulator.py.git",
       using: :git,
-      tag: "0.5.1",
-      revision: "0872e2d9737a812f78d596d9fe37494446318b15"
-  version "0.5.1"
+      tag: "0.6.0",
+      revision: "3d9490d5fb506e149fe59459e59f21b828b4130e"
+  version "0.6.0"
   license "Proprietary"
 
   depends_on "python@3.12"
