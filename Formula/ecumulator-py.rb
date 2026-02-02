@@ -12,16 +12,6 @@ class EcumulatorPy < Formula
 
   depends_on "python@3.12"
 
-  resource "textual" do
-    url "https://files.pythonhosted.org/packages/source/t/textual/textual-7.4.0.tar.gz"
-    sha256 "1a9598e485492f9a8f033c7ec5e59528df3ab0742fda925681acf78b0fb210de"
-  end
-
-  resource "rich" do
-    url "https://files.pythonhosted.org/packages/source/r/rich/rich-14.3.1.tar.gz"
-    sha256 "b8c5f568a3a749f9290ec6bddedf835cec33696bfc1e48bcfecb276c7386e4b8"
-  end
-
   resource "watchdog" do
     url "https://files.pythonhosted.org/packages/source/w/watchdog/watchdog-6.0.0.tar.gz"
     sha256 "9ddf7c82fda3ae8e24decda1338ede66e1c99883db93711d8fb941eaa2d8c282"
