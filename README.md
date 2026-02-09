@@ -5,6 +5,7 @@ $ brew tap mickeyl/formulae
 $ brew install core-bluetooth-tool
 $ brew install ECUmulator
 $ brew install ELMpersonator
+$ brew install elmterm
 ```
 
 ## Currently On Tap
@@ -15,6 +16,8 @@ $ brew install ELMpersonator
   Electronic Control Module (ECU) emulator. For Linux and macOS.
 - **[ELMpersonator][3]**:
   Emulating an ELM327 and more. For Linux and macOS.
+- **[ELMterm][4]**:
+  Smart terminal for ELM327-compatible diagnostics. For macOS.
 
 ## License
 
@@ -27,3 +30,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [1]: https://github.com/mickeyl/core-bluetooth-tool
 [2]: https://github.com/Automotive-Swift/ECUmulator
 [3]: https://github.com/Automotive-Swift/ELMpersonator
+[4]: https://github.com/Automotive-Swift/ELMterm
