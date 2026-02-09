@@ -13,9 +13,13 @@ class Elmterm < Formula
     system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/ELMterm"
     man1.install "man/ELMterm.1"
+    system "gzip", "-n", "-c", "man/ELMterm.1", out: buildpath/"elmterm.1.gz"
+    man1.install buildpath/"elmterm.1.gz"
   end
 
   test do
     system bin/"ELMterm", "--help"
+    assert_path_exists man1/"ELMterm.1"
+    assert_path_exists man1/"elmterm.1.gz"
   end
 end
