@@ -12,6 +12,7 @@ class Elmterm < Formula
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/ELMterm"
+    man1.install "man/ELMterm.1"
   end
 
   test do
