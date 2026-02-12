@@ -12,7 +12,7 @@ class Impossible < Formula
   def caveats
     <<~EOS
       Start the helper with:
-        open #{bin}/impossible-helper.app
+        impossible-helper
 
       The helper must be running before launching your iOS Simulator app.
       On first launch, macOS will prompt you to allow Bluetooth access.
@@ -21,10 +21,15 @@ class Impossible < Formula
 
   def install
     system "make", "helper"
-    bin.install "impossible-helper.app"
+    libexec.install "impossible-helper.app"
+    (bin/"impossible-helper").write <<~SH
+      #!/bin/bash
+      open "#{libexec}/impossible-helper.app"
+    SH
   end
 
   test do
-    assert_predicate bin/"impossible-helper.app/Contents/MacOS/impossible-helper", :executable?
+    assert_predicate libexec/"impossible-helper.app/Contents/MacOS/impossible-helper", :executable?
+    assert_predicate bin/"impossible-helper", :executable?
   end
 end
