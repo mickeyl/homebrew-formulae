@@ -1,9 +1,9 @@
 class Impossible < Formula
   desc "Real BLE hardware access from the iOS Simulator"
   homepage "https://github.com/mickeyl/ImpossiBLE"
-  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/0.2.tar.gz"
-  version "0.2"
-  sha256 "24c48e778d55a8eac346a49de429b1eb2600ced61379ce0cc5b5abd75f7aea55"
+  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/0.3.tar.gz"
+  version "0.3"
+  sha256 "45a4449e39affcc5ce423c0e6053e94b7bbd9f459868144d2366d7b1d4ec813c"
   license "MIT"
   head "https://github.com/mickeyl/ImpossiBLE.git", branch: "master"
 
@@ -12,7 +12,13 @@ class Impossible < Formula
   def caveats
     <<~EOS
       Start the helper with:
-        impossible-helper
+        impossible-helper start
+
+      Check whether it is running:
+        impossible-helper status
+
+      Auto-start at login:
+        impossible-helper install
 
       The helper must be running before launching your iOS Simulator app.
       On first launch, macOS will prompt you to allow Bluetooth access.
@@ -22,10 +28,7 @@ class Impossible < Formula
   def install
     system "make", "helper"
     libexec.install "impossible-helper.app"
-    (bin/"impossible-helper").write <<~SH
-      #!/bin/bash
-      open "#{libexec}/impossible-helper.app"
-    SH
+    bin.install "bin/impossible-helper"
   end
 
   test do
