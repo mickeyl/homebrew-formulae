@@ -1,18 +1,18 @@
 class Lsusd < Formula
-  include Language::Python::Virtualenv
-
   desc "List USB serial devices with their associated USB metadata"
   homepage "https://github.com/mickeyl/lsusd"
   url "https://github.com/mickeyl/lsusd/archive/refs/tags/1.0.0.tar.gz"
   version "1.0.0"
-  sha256 "70fbfd685a5a843d5ec546c3274009db19dc104b0f052fbcf3113c7fe2ae77e9"
+  sha256 "eef2c659c6533e0f5198c11180ce600dcb071cea411c12287dad1c174463ce88"
   license "MIT"
   head "https://github.com/mickeyl/lsusd.git", branch: "main"
 
   depends_on "python@3.13"
 
   def install
-    virtualenv_install_with_resources
+    system Formula["python@3.13"].opt_bin/"python3", "-m", "pip", "install",
+           *std_pip_args(prefix: prefix, build_isolation: true), "."
+    man1.install "lsusd.1"
   end
 
   test do
