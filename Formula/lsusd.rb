@@ -1,4 +1,6 @@
 class Lsusd < Formula
+  include Language::Python::Virtualenv
+
   desc "List USB serial devices with their associated USB metadata"
   homepage "https://github.com/mickeyl/lsusd"
   url "https://github.com/mickeyl/lsusd/archive/refs/tags/1.0.0.tar.gz"
@@ -10,8 +12,7 @@ class Lsusd < Formula
   depends_on "python@3.13"
 
   def install
-    system Formula["python@3.13"].opt_bin/"python3", "-m", "pip", "install",
-           *std_pip_args(prefix: prefix, build_isolation: true), "."
+    virtualenv_install_with_resources
     man1.install "lsusd.1"
   end
 
