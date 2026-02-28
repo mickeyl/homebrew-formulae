@@ -3,9 +3,9 @@ class EcuconnectTool < Formula
 
   desc "ECUconnect CLI for CANyonero adapters"
   homepage "https://github.com/Automotive-Swift/Swift-CANyonero"
-  url "https://github.com/Automotive-Swift/Swift-CANyonero/archive/refs/tags/0.9.6.tar.gz"
-  version "0.9.6"
-  sha256 "22a6df6907c4832c5bb8815b2744114b7edfe06c5a6a72376acbb7a07947da10"
+  url "https://github.com/Automotive-Swift/Swift-CANyonero/archive/refs/tags/0.9.7.tar.gz"
+  version "0.9.7"
+  sha256 "9b73e46a02db85898b5e7762fb0b5a0bd591c52bb01837720d3287404c3c268f"
   license "MIT"
   head "https://github.com/Automotive-Swift/Swift-CANyonero.git", branch: "master"
 
