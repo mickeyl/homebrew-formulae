@@ -9,7 +9,14 @@ class Lsusd < Formula
   license "MIT"
   head "https://github.com/mickeyl/lsusd.git", branch: "main"
 
-  depends_on "python@3.13"
+  depends_on "python@3.14"
+
+  on_linux do
+    odie <<~EOS
+      lsusd is best installed via pipx on Linux:
+        pipx install lsusd
+    EOS
+  end
 
   def install
     virtualenv_install_with_resources

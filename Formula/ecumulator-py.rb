@@ -10,7 +10,14 @@ class EcumulatorPy < Formula
   version "0.8"
   license "Proprietary"
 
-  depends_on "python@3.12"
+  depends_on "python@3.14"
+
+  on_linux do
+    odie <<~EOS
+      ECumulator.py is best installed via pipx on Linux:
+        pipx install ecumulator-py
+    EOS
+  end
 
   resource "watchdog" do
     url "https://files.pythonhosted.org/packages/source/w/watchdog/watchdog-6.0.0.tar.gz"

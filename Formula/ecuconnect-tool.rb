@@ -10,7 +10,14 @@ class EcuconnectTool < Formula
   head "https://github.com/Automotive-Swift/Swift-CANyonero.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "python@3.12"
+  depends_on "python@3.14"
+
+  on_linux do
+    odie <<~EOS
+      ecuconnect-tool is best installed via pipx on Linux:
+        pipx install ecuconnect-tool
+    EOS
+  end
 
   on_macos do
     resource "pyobjc-core" do
@@ -106,7 +113,7 @@ class EcuconnectTool < Formula
 
   def install
     ENV["PIP_NO_BUILD_ISOLATION"] = "1"
-    venv = virtualenv_create(libexec, "python3.12")
+    venv = virtualenv_create(libexec, "python3.14")
     venv.pip_install resources
 
     cd "python/ecuconnect_tool" do
