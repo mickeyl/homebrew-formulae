@@ -3,9 +3,8 @@ class CoreBluetoothTool < Formula
   homepage "https://www.Vanille.de"
   url "https://github.com/mickeyl/core-bluetooth-tool/archive/refs/tags/0.5.0.tar.gz"
   sha256 "d68cb5ec9e24c24f2238b43deac067c409be032c4b3bbc5b6ae4ff6be9aece6f"
-  head "https://github.com/mickeyl/core-bluetooth-tool.git", branch: "master"
-
   license "MIT"
+  head "https://github.com/mickeyl/core-bluetooth-tool.git", branch: "master"
 
   depends_on :macos
 
