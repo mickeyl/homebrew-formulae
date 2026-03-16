@@ -1,9 +1,9 @@
 class Elmterm < Formula
   desc "Intelligent terminal for ELM327-compatible automotive diagnostics"
   homepage "https://github.com/Automotive-Swift/ELMterm"
-  url "https://github.com/Automotive-Swift/ELMterm/archive/refs/tags/1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "3500247f4f2ff3f551b4229c3581c206306c0907a7058eb65acdda780c66d600"
+  url "https://github.com/Automotive-Swift/ELMterm/archive/refs/tags/1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "be003fb8fa62ed8d4d944daa05fc9a445b1218bc36ee5d2f18cc7d5af7126787"
   license "MIT"
   head "https://github.com/Automotive-Swift/ELMterm.git", branch: "master"
 
