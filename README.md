@@ -19,6 +19,8 @@ $ brew install <formula>
   Real BLE hardware access from the iOS Simulator. For macOS.
 - **[lsusd][6]**:
   List USB serial devices with their associated USB metadata. For Linux and macOS.
+- **[swift-repl][7]**:
+  Launch a Swift REPL with modules from local Swift packages. For macOS and Linux.
 
 ### Private Formulae (Require Non-Public Access)
 
@@ -40,3 +42,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [4]: https://github.com/Automotive-Swift/ELMterm
 [5]: https://github.com/mickeyl/ImpossiBLE
 [6]: https://github.com/mickeyl/lsusd
+[7]: https://github.com/mickeyl/swift-repl
