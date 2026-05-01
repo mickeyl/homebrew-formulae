@@ -3,9 +3,9 @@ class Lsusd < Formula
 
   desc "List USB serial devices with their associated USB metadata"
   homepage "https://github.com/mickeyl/lsusd"
-  url "https://github.com/mickeyl/lsusd/archive/refs/tags/v1.0.3.tar.gz"
-  version "1.0.3"
-  sha256 "ef52ac45ae9e07722075ff02bfa0c7526cd343398904cb767ee5b921508fb8d6"
+  url "https://github.com/mickeyl/lsusd/archive/refs/tags/v1.1.0.tar.gz"
+  version "1.1.0"
+  sha256 "cbf7d4bb49bf6b39838bcd9f0153e37e28075c6cf5f9781d9b908309991f3de4"
   license "MIT"
   head "https://github.com/mickeyl/lsusd.git", branch: "main"
 
