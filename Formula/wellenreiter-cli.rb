@@ -1,0 +1,24 @@
+class WellenreiterCli < Formula
+  desc "Terminal radio picker and stream debugger for Wellenreiter"
+  homepage "https://gitlab.com/vanille-apps/radio"
+  url "ssh://git@gitlab.com/vanille-apps/radio.git",
+      using:  :git,
+      branch: "master"
+  version "0.1.0"
+  license "Proprietary"
+  head "ssh://git@gitlab.com/vanille-apps/radio.git", branch: "master"
+
+  depends_on :macos
+
+  def install
+    system "make", "install", "prefix=#{prefix}"
+  end
+
+  test do
+    assert_match "wellenreiter-cli", shell_output("#{bin}/wellenreiter-cli help")
+    assert_path_exists lib/"ogg.framework"
+    assert_path_exists lib/"vorbis.framework"
+    assert_path_exists share/"wellenreiter-cli/tools/wellenreiter-tui.py"
+    assert_path_exists share/"wellenreiter-cli/manifest/stations.json"
+  end
+end
