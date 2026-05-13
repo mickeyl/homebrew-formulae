@@ -11,7 +11,8 @@ class WellenreiterCli < Formula
   depends_on :macos
 
   def install
-    system "make", "install", "prefix=#{prefix}"
+    system "make", "install", "prefix=#{prefix}",
+           "SWIFT_BUILD_FLAGS=--quiet --disable-sandbox -Xswiftc -suppress-warnings"
   end
 
   test do
