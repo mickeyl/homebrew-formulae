@@ -6,7 +6,7 @@ class WellenreiterCli < Formula
       branch: "master"
   version "0.1.0"
   license "Proprietary"
-  revision 1
+  revision 2
   head "ssh://git@gitlab.com/vanille-apps/radio.git", branch: "master"
 
   depends_on :macos
