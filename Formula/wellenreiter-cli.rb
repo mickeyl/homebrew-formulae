@@ -4,7 +4,7 @@ class WellenreiterCli < Formula
   url "ssh://git@gitlab.com/vanille-apps/radio.git",
       using:  :git,
       branch: "master"
-  version "3.0.1245"
+  version "3.0.1246"
   license "Proprietary"
   head "ssh://git@gitlab.com/vanille-apps/radio.git", branch: "master"
 
