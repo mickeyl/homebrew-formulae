@@ -1,8 +1,8 @@
 class Impossible < Formula
   desc "Real BLE hardware access from the iOS Simulator"
   homepage "https://github.com/mickeyl/ImpossiBLE"
-  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/2.2.0.tar.gz"
-  sha256 "c40df9b4f927608f93373effcf3afedbcafced11d7c27799fe443623bd70a718"
+  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/2.2.1.tar.gz"
+  sha256 "84eb3fa4606dacbb2319d1305b244cf976be68f707ea792fa3ee57a36b78e458"
   license "MIT"
   head "https://github.com/mickeyl/ImpossiBLE.git", branch: "master"
 
