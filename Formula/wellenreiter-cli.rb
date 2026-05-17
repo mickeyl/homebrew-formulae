@@ -3,7 +3,7 @@ class WellenreiterCli < Formula
   homepage "https://gitlab.com/vanille-apps/radio"
   url "ssh://git@gitlab.com/vanille-apps/radio.git",
       branch: "master"
-  version "3.0.1253"
+  version "3.0.1254"
   license :cannot_represent
   head "ssh://git@gitlab.com/vanille-apps/radio.git", branch: "master"
 
