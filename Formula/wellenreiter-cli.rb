@@ -45,7 +45,7 @@ class WellenreiterCli < Formula
     assert_path_exists lib/"vorbis.framework"
     assert_path_exists pkgshare/"tools/wellenreiter-tui-textual.py"
     assert_path_exists pkgshare/"manifest/stations.json"
-    assert_predicate libexec/"venv/bin/python3", :exist?
+    assert_path_exists libexec/"venv/bin/python3"
     system libexec/"venv/bin/python3", "-c", "import textual, textual_image, PIL"
   end
 end
