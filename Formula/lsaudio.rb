@@ -6,9 +6,8 @@ class Lsaudio < Formula
   license "MIT"
   head "https://github.com/mickeyl/lsaudio.git", branch: "master"
 
-  depends_on :macos
-  depends_on macos: :sonoma
   depends_on xcode: ["15.0", :build]
+  depends_on macos: :sonoma
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
