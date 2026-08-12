@@ -9,6 +9,8 @@ $ brew install <formula>
 
 ### Public Formulae (No Private Credentials Required)
 
+- **[CAMouflage][8]**:
+  Mock and passthrough camera input for the iOS Simulator. For macOS.
 - **[core-bluetooth-tool][1]**:
   A command line tool for Bluetooth Low Energy (BLE) devices. For macOS.
 - **[ecuconnect-tool][2]**:
@@ -43,3 +45,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [5]: https://github.com/mickeyl/ImpossiBLE
 [6]: https://github.com/mickeyl/lsusd
 [7]: https://github.com/mickeyl/swift-repl
+[8]: https://github.com/mickeyl/CAMouflage
