@@ -1,8 +1,8 @@
 class Camouflage < Formula
   desc "Mock and passthrough camera input for the iOS Simulator"
   homepage "https://github.com/mickeyl/CAMouflage"
-  url "https://github.com/mickeyl/CAMouflage/archive/refs/tags/0.3.0.tar.gz"
-  sha256 "b211f21cb608b47418ba351c46db9174fcbefd3691fdc3f27c5115a3c9e8df47"
+  url "https://github.com/mickeyl/CAMouflage/archive/refs/tags/0.4.0.tar.gz"
+  sha256 "1c2cc0c445b9380d164b60b8ecbe02ccca9f11c882906c8d8abe9b3f8654c5cb"
   license "MIT"
   head "https://github.com/mickeyl/CAMouflage.git", branch: "master"
 
