@@ -1,29 +1,29 @@
 class Impossible < Formula
   desc "Real BLE hardware access from the iOS Simulator"
   homepage "https://github.com/mickeyl/ImpossiBLE"
-  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/3.0.0.tar.gz"
-  sha256 "a3283091a09687720c892929605cf1ce4ecd19e090f94207ba8348e81642faf8"
+  url "https://github.com/mickeyl/ImpossiBLE/archive/refs/tags/3.1.0.tar.gz"
+  sha256 "867981931a66e0738f96309844a322461944120c4239221c564ffc13c9e7ae69"
   license "MIT"
   head "https://github.com/mickeyl/ImpossiBLE.git", branch: "master"
 
   depends_on macos: :sequoia
 
   def install
-    system "make", "mock"
-    libexec.install "ImpossiBLE-Mock.app"
+    system "make", "mac"
+    libexec.install "ImpossiBLE-Mac.app"
   end
 
   def caveats
     <<~EOS
       Start the provider with:
-        open #{opt_libexec}/ImpossiBLE-Mock.app
+        open #{opt_libexec}/ImpossiBLE-Mac.app
 
       Select Mock (virtual BLE peripherals) or Passthrough (real Mac
       Bluetooth) in its menu bar panel. On first Passthrough use, macOS
       will prompt you to allow Bluetooth access.
 
       Since 3.0.0 there is no separate impossible-helper anymore — the
-      mock app is the single provider for both modes. A leftover helper
+      Mac app is the single provider for both modes. A leftover helper
       from an earlier install can be removed with:
         rm -rf ~/.local/bin/impossible-helper{,.app}
         launchctl unload ~/Library/LaunchAgents/de.tpe-europe.impossible-helper.plist 2>/dev/null
@@ -37,6 +37,6 @@ class Impossible < Formula
   end
 
   test do
-    assert_predicate libexec/"ImpossiBLE-Mock.app/Contents/MacOS/ImpossiBLE-Mock", :executable?
+    assert_predicate libexec/"ImpossiBLE-Mac.app/Contents/MacOS/ImpossiBLE-Mac", :executable?
   end
 end
