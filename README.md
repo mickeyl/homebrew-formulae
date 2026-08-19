@@ -3,6 +3,7 @@
 ```terminal
 $ brew tap mickeyl/formulae
 $ brew install <formula>
+$ brew install --cask <cask>
 ```
 
 ## Currently On Tap
@@ -20,9 +21,15 @@ $ brew install <formula>
 - **[ImpossiBLE][5]**:
   Real BLE hardware access from the iOS Simulator. For macOS.
 - **[lsusd][6]**:
-  List USB serial devices with their associated USB metadata. For Linux and macOS.
+  List USB devices with their associated USB metadata. For Linux and macOS.
 - **[swift-repl][7]**:
   Launch a Swift REPL with modules from local Swift packages. For macOS and Linux.
+
+### Casks
+
+- **[LSUSD for macOS][6]** (`lsusd-menubar`):
+  Native macOS 26 menu-bar app for inspecting USB devices, topology, serial
+  devices, and connection events.
 
 ### Private Formulae (Require Non-Public Access)
 
