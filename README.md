@@ -20,6 +20,8 @@ $ brew install --cask <cask>
   Smart terminal for ELM327-compatible diagnostics. For macOS.
 - **[ImpossiBLE][5]**:
   Real BLE hardware access from the iOS Simulator. For macOS.
+- **[lsaudio][9]**:
+  Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
   List USB devices with their associated USB metadata. For Linux and macOS.
 - **[swift-repl][7]**:
@@ -27,6 +29,9 @@ $ brew install --cask <cask>
 
 ### Casks
 
+- **[LSAudio for macOS][9]** (`lsaudio-menubar`):
+  Native macOS 26 menu-bar app for inspecting and controlling processes that
+  play or record audio.
 - **[LSUSD for macOS][6]** (`lsusd-menubar`):
   Native macOS 26 menu-bar app for inspecting USB devices, topology, serial
   devices, and connection events.
@@ -53,3 +58,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [6]: https://github.com/mickeyl/lsusd
 [7]: https://github.com/mickeyl/swift-repl
 [8]: https://github.com/mickeyl/CAMouflage
+[9]: https://github.com/mickeyl/lsaudio
