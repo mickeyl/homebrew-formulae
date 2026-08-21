@@ -1,8 +1,8 @@
 class Lsaudio < Formula
   desc "Who is making noise? List and kill audio-playing processes on macOS"
   homepage "https://github.com/mickeyl/lsaudio"
-  url "https://github.com/mickeyl/lsaudio/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "b0bfa081975cb3edb02be0f188f3c691b8733051798e5a6da19daa2b19636ac3"
+  url "https://github.com/mickeyl/lsaudio/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "18d4cd0663589e68fdf73ac92aa7b7d3bb06134b5e3a037b2746e17f7270a338"
   license "MIT"
   head "https://github.com/mickeyl/lsaudio.git", branch: "master"
 

@@ -1,6 +1,6 @@
 cask "lsaudio-menubar" do
-  version "1.1.0"
-  sha256 "52f2826c70f69a86ec1eceb1d655f0d81ebed802ea24bc4b0b07d9bc0d7b2f39"
+  version "1.1.1"
+  sha256 "009b536ed4ebd80beb1c5feab09c7d82123e850dbd754c9612e9cc4956efdca5"
 
   url "https://github.com/mickeyl/lsaudio/releases/download/macos-v#{version}/LSAudio-#{version}-macOS.zip"
   name "LSAudio"

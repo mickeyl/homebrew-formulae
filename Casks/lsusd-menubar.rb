@@ -1,6 +1,6 @@
 cask "lsusd-menubar" do
-  version "2.1.0"
-  sha256 "0edc096788c861ca9416ffc27593c7d20c3ba41ff0e55bdbb0d599ab904f676f"
+  version "2.1.1"
+  sha256 "2fe8d543497577bfe61862a1610c9ac75064ebfd23d698471653b58fc867680f"
 
   url "https://github.com/mickeyl/lsusd/releases/download/macos-v#{version}/LSUSD-#{version}-macOS.zip"
   name "LSUSD"
