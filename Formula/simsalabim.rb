@@ -28,6 +28,9 @@ class Simsalabim < Formula
       On first Passthrough use, macOS prompts for Bluetooth and camera access;
       NFC passthrough needs a USB reader (ACR122U).
 
+      Don't run Simsalabim and a standalone provider for the same modality at
+      once — they share one socket; the ownership guard lets the newest win.
+
       The bundle is ad-hoc signed by this formula with the union of the three
       modules' entitlements; that is enough for a local Homebrew installation.
     EOS
