@@ -10,6 +10,8 @@ $ brew install --cask <cask>
 
 ### Public Formulae (No Private Credentials Required)
 
+- **[Blink1][10]** (`blink1-swift`):
+  Control a ThingM blink(1) USB RGB LED from macOS.
 - **[CAMouflage][8]**:
   Mock and passthrough camera input for the iOS Simulator. For macOS.
 - **[core-bluetooth-tool][1]**:
@@ -29,6 +31,8 @@ $ brew install --cask <cask>
 
 ### Casks
 
+- **[Blink1Bar][10]** (`blink1bar`):
+  Native macOS 26 menu-bar app for driving a ThingM blink(1).
 - **[LSAudio for macOS][9]** (`lsaudio-menubar`):
   Native macOS 26 menu-bar app for inspecting and controlling processes that
   play or record audio.
@@ -59,3 +63,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [7]: https://github.com/mickeyl/swift-repl
 [8]: https://github.com/mickeyl/CAMouflage
 [9]: https://github.com/mickeyl/lsaudio
+[10]: https://github.com/mickeyl/Blink1
