@@ -1,8 +1,8 @@
 class Nfcromancer < Formula
   desc "Real NFC hardware access from the iOS Simulator"
   homepage "https://github.com/mickeyl/NFCromancer"
-  url "https://github.com/mickeyl/NFCromancer/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "2eeee0c7efcf4788d2e0aab072baa97fd2c6fc6fd3a9e4477d6e92f105e2d4fb"
+  url "https://github.com/mickeyl/NFCromancer/archive/refs/tags/0.3.0.tar.gz"
+  sha256 "75ee7977c951683c9de2054c59a8126e5932bb5a559f13b82087064aa293cd34"
   license "MIT"
   head "https://github.com/mickeyl/NFCromancer.git", branch: "master"
 

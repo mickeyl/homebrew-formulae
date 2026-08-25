@@ -5,8 +5,8 @@ class Simsalabim < Formula
   # GitHub's archive tarballs omit submodule contents, which the suite build
   # needs.
   url "https://github.com/mickeyl/Simsalabim.git",
-      tag:      "0.3.1",
-      revision: "90b6544047efab3b525f03e3943d35d298e80b59"
+      tag:      "0.4.0",
+      revision: "bc930ce5e0e86eb66d3b1c394f253f91c8fcb1d8"
   license "MIT"
   head "https://github.com/mickeyl/Simsalabim.git", branch: "master"
 
