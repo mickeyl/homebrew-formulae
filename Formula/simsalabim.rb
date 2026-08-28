@@ -10,11 +10,11 @@ class Simsalabim < Formula
   license "MIT"
   head "https://github.com/mickeyl/Simsalabim.git", branch: "master"
 
-  depends_on macos: :sequoia
   # Full Xcode, not just the CLT: Simulacrum's bundled SeedAgent is
   # cross-compiled against the iphonesimulator SDK, which superenv's CLT
   # toolchain lacks.
   depends_on xcode: :build
+  depends_on macos: :sequoia
 
   def install
     system "make", "suite"
