@@ -26,6 +26,9 @@ $ brew install --cask <cask>
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
   List USB devices with their associated USB metadata. For Linux and macOS.
+- **[pkram][11]**:
+  Track work time in Papierkram from the terminal. Unofficial third-party
+  tool, not affiliated with the makers of Papierkram. For macOS.
 - **[swift-repl][7]**:
   Launch a Swift REPL with modules from local Swift packages. For macOS and Linux.
 
@@ -64,3 +67,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [8]: https://github.com/mickeyl/CAMouflage
 [9]: https://github.com/mickeyl/lsaudio
 [10]: https://github.com/mickeyl/Blink1
+[11]: https://github.com/mickeyl/pkram
