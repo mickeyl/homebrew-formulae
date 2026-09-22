@@ -3,9 +3,9 @@ class EcuconnectTool < Formula
 
   desc "ECUconnect CLI for CANyonero adapters"
   homepage "https://github.com/Automotive-Swift/Swift-CANyonero"
-  url "https://github.com/Automotive-Swift/Swift-CANyonero/archive/refs/tags/0.9.7.tar.gz"
-  version "0.9.7"
-  sha256 "9b73e46a02db85898b5e7762fb0b5a0bd591c52bb01837720d3287404c3c268f"
+  url "https://github.com/Automotive-Swift/Swift-CANyonero/archive/refs/tags/1.0.0.tar.gz"
+  version "1.0.0"
+  sha256 "3a7c088ad677326eca3a13df12b239513c814667b219224f44c36d50d741d826"
   license "MIT"
   head "https://github.com/Automotive-Swift/Swift-CANyonero.git", branch: "master"
 
@@ -20,6 +20,13 @@ class EcuconnectTool < Formula
   end
 
   on_macos do
+    # Built by scripts/build-release-binary.sh; Package.swift depends on the
+    # private Swift-Automotive package, so this cannot be built from source here.
+    resource "swift-cli" do
+      url "https://github.com/Automotive-Swift/Swift-CANyonero/releases/download/1.0.0/ecuconnect-tool-macos-universal-1.0.0.tar.gz"
+      sha256 "d480f351ec02865490b9a11e41406fd134f85289de23c7460a8b82219781e7d8"
+    end
+
     resource "pyobjc-core" do
       url "https://files.pythonhosted.org/packages/b8/b6/d5612eb40be4fd5ef88c259339e6313f46ba67577a95d86c3470b951fce0/pyobjc_core-12.1.tar.gz"
       sha256 "2bb3903f5387f72422145e1466b3ac3f7f0ef2e9960afa9bcd8961c5cbf8bd21"
@@ -114,16 +121,41 @@ class EcuconnectTool < Formula
   def install
     ENV["PIP_NO_BUILD_ISOLATION"] = "1"
     venv = virtualenv_create(libexec, "python3.14")
-    venv.pip_install resources
+    venv.pip_install resources.reject { |r| r.name == "swift-cli" }
 
     cd "python/ecuconnect_tool" do
       venv.pip_install_and_link "."
     end
+
+    # The Swift variant is the one for daily use, so it takes the plain name;
+    # the Python variant remains available for Linux and for BLE via BlueZ.
+    if OS.mac?
+      mv bin/"ecuconnect-tool", bin/"ecuconnect-tool-py"
+      resource("swift-cli").stage do
+        bin.install "ecuconnect-tool"
+      end
+    end
+  end
+
+  def caveats
+    return unless OS.mac?
+
+    <<~EOS
+      Two variants are installed:
+        ecuconnect-tool      the Swift one (reports "(Swift)" for --version)
+        ecuconnect-tool-py   the Python one (reports "(Python)")
+    EOS
   end
 
   test do
-    output = shell_output("#{bin}/ecuconnect-tool --help")
-    assert_match "ECUconnect tool (Python)", output
-    assert_match "login", output
+    python_output = shell_output("#{bin}/ecuconnect-tool-py --help")
+    assert_match "ECUconnect tool (Python)", python_output
+    assert_match "login", python_output
+    assert_match "(Python)", shell_output("#{bin}/ecuconnect-tool-py --version")
+
+    swift_output = shell_output("#{bin}/ecuconnect-tool --help")
+    assert_match "ECUconnect tool (Swift)", swift_output
+    assert_match "term", swift_output
+    assert_match "(Swift)", shell_output("#{bin}/ecuconnect-tool --version")
   end
 end
