@@ -45,6 +45,10 @@ $ brew install --cask <cask>
 
 ### Private Formulae (Require Non-Public Access)
 
+- **[cancorder][12]**:
+  List, sniff, record and diagnose CAN buses from the command line; built for
+  scripts and LLM agents. For macOS. Requires access to the private CANsole
+  repository over SSH.
 - **[ecumulator-py][3]**:
   ECU emulation and automotive diagnostic tooling. For Linux and macOS.
   Requires access to private GitLab repositories over SSH.
@@ -68,3 +72,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [9]: https://github.com/mickeyl/lsaudio
 [10]: https://github.com/mickeyl/Blink1
 [11]: https://github.com/mickeyl/pkram
+[12]: https://github.com/Vanille-Media/CANsole
