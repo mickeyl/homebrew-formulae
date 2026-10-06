@@ -22,6 +22,9 @@ $ brew install --cask <cask>
   Smart terminal for ELM327-compatible diagnostics. For macOS.
 - **[ImpossiBLE][5]**:
   Real BLE hardware access from the iOS Simulator. For macOS.
+- **[iphone-screenshot][13]**:
+  Capture screenshots from attached iPhones and iPads (and list them) via
+  `devicectl`. For macOS; needs Xcode 27 or later.
 - **[lsaudio][9]**:
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
@@ -73,3 +76,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [10]: https://github.com/mickeyl/Blink1
 [11]: https://github.com/mickeyl/pkram
 [12]: https://github.com/Vanille-Media/CANsole
+[13]: https://github.com/mickeyl/ScreenGrab
