@@ -23,8 +23,9 @@ $ brew install --cask <cask>
 - **[ImpossiBLE][5]**:
   Real BLE hardware access from the iOS Simulator. For macOS.
 - **[iphone-screenshot][13]**:
-  Capture screenshots from attached iPhones and iPads (and list them) via
-  `devicectl`. For macOS; needs Xcode 27 or later.
+  Capture screenshots from attached iPhones and iPads and from running
+  simulators (and list them) via `devicectl` and `simctl`. For macOS; needs
+  Xcode 27 or later.
 - **[lsaudio][9]**:
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
