@@ -1,8 +1,8 @@
 class IphoneScreenshot < Formula
   desc "Capture screenshots from attached iPhones and iPads via devicectl"
   homepage "https://github.com/mickeyl/ScreenGrab"
-  url "https://github.com/mickeyl/ScreenGrab/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3068a4c85812f8ceb28bfd4c0b1ce14fa96dd5bf4d1b6f0b6b039a0cdc50cdc2"
+  url "https://github.com/mickeyl/ScreenGrab/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "0bf82273c6e6bec1dd041d9b939417edb57439e636586bc87c7f1e3bbebe5a3e"
   license "MIT"
   head "https://github.com/mickeyl/ScreenGrab.git", branch: "master"
 
