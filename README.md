@@ -24,8 +24,8 @@ $ brew install --cask <cask>
   Real BLE hardware access from the iOS Simulator. For macOS.
 - **[iphone-screenshot][13]**:
   Capture screenshots from attached iPhones and iPads and from running
-  simulators (and list them) via `devicectl` and `simctl`. For macOS; needs
-  Xcode 27 or later.
+  simulators (and list them) via `devicectl` and `simctl`; the CLI of
+  PNGuin. For macOS; needs Xcode 27 or later.
 - **[lsaudio][9]**:
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
@@ -77,4 +77,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [10]: https://github.com/mickeyl/Blink1
 [11]: https://github.com/mickeyl/pkram
 [12]: https://github.com/Vanille-Media/CANsole
-[13]: https://github.com/mickeyl/ScreenGrab
+[13]: https://github.com/mickeyl/PNGuin

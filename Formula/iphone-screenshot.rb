@@ -1,10 +1,10 @@
 class IphoneScreenshot < Formula
   desc "Capture screenshots of iPhones, iPads and simulators via devicectl/simctl"
-  homepage "https://github.com/mickeyl/ScreenGrab"
-  url "https://github.com/mickeyl/ScreenGrab/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "1f59bef0c528ee230554269786fad126740b8d08292bc527149a6fe9cef79c93"
+  homepage "https://github.com/mickeyl/PNGuin"
+  url "https://github.com/mickeyl/PNGuin/archive/refs/tags/v0.9.1.tar.gz"
+  sha256 "c49c61f40b35013b8f19255a542df1b4b2b3667ee3ba888fc3af48493fa438d5"
   license "MIT"
-  head "https://github.com/mickeyl/ScreenGrab.git", branch: "master"
+  head "https://github.com/mickeyl/PNGuin.git", branch: "master"
 
   depends_on xcode: ["27.0", :build]
   depends_on macos: :sequoia
