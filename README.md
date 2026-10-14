@@ -46,6 +46,8 @@ $ brew install --cask <cask>
 - **[LSUSD for macOS][6]** (`lsusd-menubar`):
   Native macOS 26 menu-bar app for inspecting USB devices, topology, serial
   devices, and connection events.
+- **[Wellenreiter][14]** (`wellenreiter`):
+  Curated internet radio in the menu bar. For macOS 26 or later.
 
 ### Private Formulae (Require Non-Public Access)
 
@@ -78,3 +80,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [11]: https://github.com/mickeyl/pkram
 [12]: https://github.com/Vanille-Media/CANsole
 [13]: https://github.com/mickeyl/PNGuin
+[14]: https://www.vanille.de/apps/
