@@ -29,7 +29,8 @@ $ brew install --cask <cask>
 - **[lsaudio][9]**:
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
-  List USB devices with their associated USB metadata. For Linux and macOS.
+  List USB devices with serial device nodes, USB metadata, and terminal colors.
+  For Linux and macOS.
 - **[pkram][11]**:
   Track work time in Papierkram from the terminal. Unofficial third-party
   tool, not affiliated with the makers of Papierkram. For macOS.
