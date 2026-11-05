@@ -1,4 +1,4 @@
-class IphoneScreenshot < Formula
+class Pnguin < Formula
   desc "Capture screenshots of iPhones, iPads and simulators via devicectl/simctl"
   homepage "https://github.com/mickeyl/PNGuin"
   url "https://github.com/mickeyl/PNGuin/archive/refs/tags/v0.9.1.tar.gz"

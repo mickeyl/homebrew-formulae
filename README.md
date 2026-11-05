@@ -22,10 +22,6 @@ $ brew install --cask <cask>
   Smart terminal for ELM327-compatible diagnostics. For macOS.
 - **[ImpossiBLE][5]**:
   Real BLE hardware access from the iOS Simulator. For macOS.
-- **[iphone-screenshot][13]**:
-  Capture screenshots from attached iPhones and iPads and from running
-  simulators (and list them) via `devicectl` and `simctl`; the CLI of
-  PNGuin. For macOS; needs Xcode 27 or later.
 - **[lsaudio][9]**:
   Inspect and control processes that play or record audio. For macOS.
 - **[lsusd][6]**:
@@ -34,6 +30,10 @@ $ brew install --cask <cask>
 - **[pkram][11]**:
   Track work time in Papierkram from the terminal. Unofficial third-party
   tool, not affiliated with the makers of Papierkram. For macOS.
+- **[PNGuin][13]** (`pnguin`):
+  Capture screenshots from attached iPhones and iPads and from running
+  simulators (and list them) via `devicectl` and `simctl`. Installs the
+  `iphone-screenshot` CLI. For macOS; needs Xcode 27 or later.
 - **[swift-repl][7]**:
   Launch a Swift REPL with modules from local Swift packages. For macOS and Linux.
 
