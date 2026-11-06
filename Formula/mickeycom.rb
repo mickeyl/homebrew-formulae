@@ -3,9 +3,9 @@ class Mickeycom < Formula
   homepage "https://github.com/mickeyl/mickeycom"
   url "ssh://git@github.com/mickeyl/mickeycom.git",
       using:    :git,
-      tag:      "v0.9.1",
-      revision: "0bcc20579ddceda8034fa33c04de3a3bb5d50001"
-  version "0.9.1"
+      tag:      "v0.9.2",
+      revision: "c674bad132d054d8c9e7065e7df4d217e263c871"
+  version "0.9.2"
   license "MIT"
   head "https://github.com/mickeyl/mickeycom.git", branch: "master"
 
