@@ -27,6 +27,9 @@ $ brew install --cask <cask>
 - **[lsusd][6]**:
   List USB devices with serial device nodes, USB metadata, and terminal colors.
   For Linux and macOS.
+- **[mickeycom][15]**:
+  Modern serial terminal (`mcom`) with bottom-anchored TUI, directional colors,
+  and `ESC + :` command mode. For Linux and macOS.
 - **[pkram][11]**:
   Track work time in Papierkram from the terminal. Unofficial third-party
   tool, not affiliated with the makers of Papierkram. For macOS.
@@ -82,3 +85,4 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [12]: https://github.com/Vanille-Media/CANsole
 [13]: https://github.com/mickeyl/PNGuin
 [14]: https://www.vanille.de/apps/
+[15]: https://github.com/mickeyl/mickeycom
