@@ -10,6 +10,8 @@ $ brew install --cask <cask>
 
 ### Public Formulae (No Private Credentials Required)
 
+- **[epy][16]**: CANsole spec import, authoring and diagnostic tools for macOS; installs `epy`, `doipclient`, `hsfzclient` and their man pages. To replace the old `ecumulator-py` commands, run `brew unlink ecumulator-py` before installing.
+
 - **[Blink1][10]** (`blink1-swift`):
   Control a ThingM blink(1) USB RGB LED from macOS.
 - **[CAMouflage][8]**:
@@ -86,3 +88,5 @@ mickeyl ([@mickeyl](https://twitter.com/DrMickeyLauer))
 [13]: https://github.com/mickeyl/PNGuin
 [14]: https://www.vanille.de/apps/
 [15]: https://github.com/mickeyl/mickeycom
+
+[16]: https://www.cansole.dev/studio/
